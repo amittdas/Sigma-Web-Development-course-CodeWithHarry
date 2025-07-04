@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ddd;
+            transition: 0.3s;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Tables in HTML</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>CLASS</th>
+                <th>ROLL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Amit</td>
+                <td>3rd year</td>
+                <td>109005</td>
+            </tr>
+            <tr>
+                <td>Raj</td>
+                <td>six</td>
+                <td>244641613</td>
+            </tr>
+            <tr>
+                <td colspan="2">hey</td>
+                <td>heyyyy</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

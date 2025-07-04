@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    
+    <form action="/submit.php" method="POST">
+        <div>
+            <label for="name">NAME</label>
+            <input type="text" name="name" placeholder="Enter Name" id="name" required>
+        </div>
+        <div>
+            <label for="phone">PHONE</label>
+            <input type="tel" name="phone" placeholder="Enter Phone number" id="phone" required>
+        </div>
+        <div>
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" placeholder="Enter email" id="email" required>
+        </div>
+        <div>
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" placeholder="Enter password" id="password" required>
+        </div>
+        <div>
+            <label for="dob">DATE</label>
+            <input type="date" name="dob" id="dob" required>
+        </div>
+
+        <!-- select dropdown  -->
+        <div>
+            <label for="gender">GENDER</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+
+        <!-- radio buttons for subscription plan -->
+        <div>
+            <p>Subscription Plan</p>
+            <input type="radio" id="Basic" name="subscription" value="basic">
+            <label for="Basic">Basic</label>
+            <input type="radio" id="premium" name="subscription" value="premium">
+            <label for="premium">Premium</label>
+            <input type="radio" id="VIP" name="subscription" value="vip">
+            <label for="VIP">VIP</label>
+        </div>
+
+        <!-- checkbox -->
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+
+        <!-- text area for comments -->
+        <div>
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" placeholder="Enter your text here"></textarea>
+        </div>
+
+        <!-- submit button  -->
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>
