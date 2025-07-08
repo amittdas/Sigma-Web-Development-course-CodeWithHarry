@@ -1,0 +1,15 @@
+.container {
+    height: 634px;
+    width: 688px;
+    border: 2px solid black;
+    background-color: azure;
+}
+
+img {
+    width: 466px;
+    height: 488px;
+    /* object-fit: fill; ---> by default property */
+    object-fit: cover;
+    object-position: bottom right;
+    /* object-fit: contain; */
+}
