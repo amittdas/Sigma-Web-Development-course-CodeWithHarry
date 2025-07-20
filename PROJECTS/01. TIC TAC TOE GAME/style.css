@@ -1,0 +1,121 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #548687;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Game Layout */
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+/* Game Boxes */
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffc7;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.box:hover {
+    background-color: #fff9a3;
+    transform: scale(1.05);
+}
+
+/* Reset & New Game Buttons */
+#reset-btn,
+#new-btn {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#reset-btn {
+    background-color: #3f350d;
+    margin-top: 2rem;
+}
+
+#new-btn {
+    background-color: #67670f;
+}
+
+#reset-btn:hover,
+#new-btn:hover {
+    background-color: #5c4d13;
+    transform: scale(1.08);
+}
+
+/* Win Message */
+#msg {
+    color: #ffffc7;
+    font-size: 5vmin;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+/* Hide Class */
+.hide {
+    display: none;
+}
+
+/* Heading */
+h1 {
+    color: #373715;
+    margin-top: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+}
